@@ -24,6 +24,39 @@ ul {
   position: relative;
 }
 
+.carousel-button {
+  position: absolute;
+  z-index: 100;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: hsla(0, 0%, 100%, 0.5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: hsla(0, 0%, 0%, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: hsl(0, 0, 100%);
+  background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+.carousle-button:focus {
+  outline: 0.0625rem solid hsl(0, 0%, 0%);
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
 .slide {
   position: absolute;
   inset: 0;
@@ -41,19 +74,4 @@ ul {
 
 .slide[data-active] {
   opacity: 1;
-}
-
-.carousel-button {
-  position: absolute;
-  z-index: 100;
-  background: none;
-  border: none;
-  font-size: 4rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: hsla(0, 0%, 100%, 0.5);
-  cursor: pointer;
-  border-radius: .25rem;
-  padding: 0 .5rem;
-  background-color: hsla(0, 0%, 0%, 0.1);
 }
